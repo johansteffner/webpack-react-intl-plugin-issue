@@ -26,7 +26,7 @@ const config = {
         loader: 'babel-loader',
         options: {
           plugins: [
-            ['react-intl', {
+            [path.resolve(__dirname, 'node_modules', 'babel-plugin-react-intl'), {
               messagesDir: './dist/messages'
             }]
           ]
